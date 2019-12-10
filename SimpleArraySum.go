@@ -1,15 +1,12 @@
 package main
 import "fmt"
 
-func solveMeFirst(a uint32,b uint32) uint32{
-  // Hint: Type return (a+b) below
-  return (a+b)
+func main(){
+    var n, temp,sum int
+    fmt.Scan(&n)
+    for i:=0;i<n;i++{
+        fmt.Scan(&temp)
+        sum += temp
+    }
+    fmt.Println(sum)
 }
-
-func main() {
-    var a, b, res uint32
-    fmt.Scanf("%v\n%v", &a,&b)
-    res = solveMeFirst(a,b)
-    fmt.Println(res)
-}
-
